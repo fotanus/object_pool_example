@@ -2,14 +2,7 @@ require 'spec_helper'
 
 module ObjectPoolExample
   describe SQLiteClient do
-    database_path = "spec/test.sqlite"
-    before(:each) {
-      File.delete database_path if File.exists?(database_path)
-      stub_const(
-        "ObjectPoolExample::SQLiteClient::DATABASE_PATH",
-        database_path
-      )
-    }
+    before(:each) { reset_test_database }
 
     describe "#initialize" do
       it "Creates a connection on instanciate" do
