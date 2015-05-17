@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["fotanus@gmail.com"]
   spec.email         = ["Felipe Tanus"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = "An example of object pool"
+  spec.description   = "An example of how to implement the object pool pattern on ruby"
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 
